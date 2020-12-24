@@ -40,6 +40,10 @@ public class Signup extends AppCompatActivity {
         joinus=(Button)findViewById(R.id.join);
         myAuth=FirebaseAuth.getInstance();
 
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.mytoolbar);
+        setSupportActionBar(myToolbar);
+//        getSupportActionBar().setTitle("Register");
+
 //        Toolbar toolbar = findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
 //        getSupportActionBar().setTitle("Register");

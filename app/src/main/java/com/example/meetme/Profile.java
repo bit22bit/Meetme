@@ -35,7 +35,7 @@ public class Profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.mytoolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("");
 

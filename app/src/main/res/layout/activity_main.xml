@@ -4,26 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="100dp"
-    android:paddingRight="100dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/logins"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/signups"
-        android:layout_gravity="center"
-        android:layout_marginBottom="100dp"
-        android:text="Login Screen" />
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar" />
 
-    <Button
-        android:id="@+id/signups"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="center"
-        android:layout_marginBottom="250dp"
-        android:text="SignUp Screen" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="150dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp">
+
+        <Button
+            android:id="@+id/logins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/signups"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100dp"
+            android:text="Login Screen" />
+
+        <Button
+            android:id="@+id/signups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="250dp"
+            android:text="SignUp Screen" />
+
+    </LinearLayout>
 
 </RelativeLayout>

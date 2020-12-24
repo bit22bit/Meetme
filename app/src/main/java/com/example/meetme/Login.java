@@ -34,8 +34,8 @@ public class Login extends AppCompatActivity {
         inputpassword = (EditText) findViewById(R.id.pass);
         myAuth = FirebaseAuth.getInstance();
 
-//        Toolbar toolbar = findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
+        Toolbar toolbar = findViewById(R.id.mytoolbar);
+        setSupportActionBar(toolbar);
 //        getSupportActionBar().setTitle("Login");
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
