@@ -2,6 +2,7 @@ package com.example.meetme;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -32,6 +33,11 @@ public class Login extends AppCompatActivity {
         inputemail = (TextView) findViewById(R.id.email);
         inputpassword = (EditText) findViewById(R.id.pass);
         myAuth = FirebaseAuth.getInstance();
+
+//        Toolbar toolbar = findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
+//        getSupportActionBar().setTitle("Login");
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,7 +75,7 @@ public class Login extends AppCompatActivity {
                                     }
                                 } else {
                                     Toast.makeText(Login.this, "Successfully Logged in.", Toast.LENGTH_SHORT).show();
-                                    Intent intent = new Intent(Login.this, MainActivity.class);
+                                    Intent intent = new Intent(Login.this, Profile.class);
                                     startActivity(intent);
                                     finish();
                                 }
