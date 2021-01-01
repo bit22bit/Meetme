@@ -37,7 +37,6 @@ public class Profile extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.mytoolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("");
 
         profile_image = findViewById(R.id.profileimage);
         username = findViewById(R.id.username);

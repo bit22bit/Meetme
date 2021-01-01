@@ -23,6 +23,7 @@ public class Login extends AppCompatActivity {
     private Button signup, login;
     private FirebaseAuth myAuth;
     private TextView inputemail, inputpassword;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,10 +34,9 @@ public class Login extends AppCompatActivity {
         inputemail = (TextView) findViewById(R.id.email);
         inputpassword = (EditText) findViewById(R.id.pass);
         myAuth = FirebaseAuth.getInstance();
+        toolbar = findViewById(R.id.mytoolbar);
 
-        Toolbar toolbar = findViewById(R.id.mytoolbar);
         setSupportActionBar(toolbar);
-//        getSupportActionBar().setTitle("Login");
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         signup.setOnClickListener(new View.OnClickListener() {

@@ -42,7 +42,6 @@ public class Signup extends AppCompatActivity {
 
         Toolbar myToolbar = (Toolbar) findViewById(R.id.mytoolbar);
         setSupportActionBar(myToolbar);
-//        getSupportActionBar().setTitle("Register");
 
 //        Toolbar toolbar = findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
