@@ -30,16 +30,16 @@
 
         </androidx.appcompat.widget.Toolbar>
 
-    </com.google.android.material.appbar.AppBarLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tab_layout"
+            android:background="@color/design_default_color_primary"
+            app:tabSelectedTextColor="@color/white"
+            app:tabIndicatorColor="@color/white"
+            app:tabTextColor="@color/white"/>
 
-    <com.google.android.material.tabs.TabLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tab_layout"
-        android:background="@color/design_default_color_primary"
-        app:tabSelectedTextColor="@color/design_default_color_primary"
-        app:tabIndicatorColor="@color/design_default_color_primary"
-        app:tabTextColor="@color/design_default_color_primary"/>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
