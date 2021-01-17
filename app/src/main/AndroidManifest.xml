@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Meetme">
-        <activity android:name=".message"></activity>
+        <activity android:name=".Message"></activity>
         <activity android:name=".Profile" />
         <activity android:name=".Signup" />
         <activity android:name=".Login" />
